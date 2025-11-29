@@ -1,0 +1,48 @@
+{
+  "title": "Influencer Data Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "platformLinks": {
+      "title": "Platform Links",
+      "type": "array",
+      "description": "List of creator profile URLs from Instagram, TikTok, or YouTube",
+      "editor": "stringList",
+      "example": ["https://www.instagram.com/shraddha.dsgn/"],
+      "prefill": ["https://www.instagram.com/shraddha.dsgn/"]
+    },
+    "executive": {
+      "title": "Executive",
+      "type": "string",
+      "description": "Name of the executive handling this creator",
+      "editor": "textfield",
+      "example": "Joyce",
+      "prefill": "Joyce"
+    },
+    "team": {
+      "title": "Team",
+      "type": "string",
+      "description": "Team assigned to this creator",
+      "editor": "select",
+      "enum": ["Warriors", "Falcons", "Phoenix", "Eagles"],
+      "prefill": "Warriors"
+    },
+    "category": {
+      "title": "Category",
+      "type": "string",
+      "description": "Content category or niche of the creator",
+      "editor": "textfield",
+      "example": "Tech",
+      "prefill": "Tech"
+    },
+    "internalComment": {
+      "title": "Internal Comment",
+      "type": "string",
+      "description": "Internal notes or comments about the creator",
+      "editor": "textarea",
+      "example": "Quick responder",
+      "prefill": "Test run"
+    }
+  },
+  "required": ["platformLinks"]
+}
